@@ -1,10 +1,9 @@
 from abc import abstractmethod
 from itertools import cycle
-from typing import TYPE_CHECKING, Any, Generator
+from typing import Any, TYPE_CHECKING
 
 import pygame
 from pygame.event import Event
-from pygame.sprite import AbstractGroup
 
 if TYPE_CHECKING:
     from game.core.base_objects import BaseObject
