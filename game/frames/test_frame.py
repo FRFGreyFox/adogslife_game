@@ -24,6 +24,10 @@ class TestFrame:
             animals.Bird2(), animals.Bird2(), animals.Bird2(), animals.Bird2(), animals.Bird2(), animals.Bird2(),
             peoples.Human1(), peoples.Human1(), peoples.Human1(), peoples.Human1(), peoples.Human1(), peoples.Human1(),
             peoples.Human2(), peoples.Human2(), peoples.Human2(), peoples.Human2(), peoples.Human2(), peoples.Human2(),
+            peoples.Human3(), peoples.Human3(), peoples.Human3(), peoples.Human3(), peoples.Human3(), peoples.Human3(),
+            peoples.Human4(), peoples.Human4(), peoples.Human4(), peoples.Human4(), peoples.Human4(), peoples.Human4(),
+            peoples.Human5(), peoples.Human5(), peoples.Human5(), peoples.Human5(), peoples.Human5(), peoples.Human5(),
+            peoples.Human6(), peoples.Human6(), peoples.Human6(), peoples.Human6(), peoples.Human6(), peoples.Human6(),
         ]
 
         start_x = 50

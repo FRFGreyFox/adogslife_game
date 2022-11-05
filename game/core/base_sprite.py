@@ -10,15 +10,10 @@ if TYPE_CHECKING:
 
 
 class BaseSprite(pygame.sprite.Sprite):
-    buffer_delta_time: float
     animation_pause_delay: float
-    animation_delay: int
     images: tuple[pygame.surface.Surface, ...]
     index: cycle
     rect: pygame.Rect
-    main_img: pygame.surface.Surface
-    size: float
-    frame_size: tuple[int, int]
 
     def __init__(self, object: 'BaseObject', *args: list[Any], **kwargs: dict[str, Any]) -> None:
         super().__init__(*args)  # type: ignore
@@ -26,6 +21,7 @@ class BaseSprite(pygame.sprite.Sprite):
         self.buffer_delta_time = 0.0
         self.size = self.object.size
         self.frame_size = (0, 0)
+        self.animation_delay: int = 1000
 
         self.load_sprite_images()
         self._prepare_images()
