@@ -37,7 +37,3 @@ class Game:
             self.screen.fill(pygame.Color('white'))
             current_frame.draw()
             pygame.display.flip()
-
-
-if __name__ == '__main__':
-    Game()

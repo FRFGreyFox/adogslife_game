@@ -41,3 +41,6 @@ class BaseObject:
 
     def resize_inst(self, new_size: float) -> None:
         self.size = new_size
+
+    def get_animations_list(self) -> tuple[str, ...]:
+        return tuple(self.animations.keys())

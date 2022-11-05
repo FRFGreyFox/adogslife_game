@@ -17,7 +17,6 @@ class Dog1(BaseObject):
             self.main_img = pygame.image.load(DOGS_ASSETS_DIR / '1' / 'idle.png')
             self.animation_delay = 750
             self.frame_size = (36, 26)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((2, 22), self.frame_size),
                 self.main_img.subsurface((50, 22), self.frame_size),
@@ -30,8 +29,6 @@ class Dog1(BaseObject):
             self.main_img = pygame.image.load(DOGS_ASSETS_DIR / '1' / 'walk.png')
             self.animation_delay = 500
             self.frame_size = (41, 26)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
-
             self.images = (
                 self.main_img.subsurface((1, 22), self.frame_size),
                 self.main_img.subsurface((50, 22), self.frame_size),
@@ -46,7 +43,6 @@ class Dog1(BaseObject):
             self.main_img = pygame.image.load(DOGS_ASSETS_DIR / '1' / 'attack.png')
             self.animation_delay = 500
             self.frame_size = (42, 26)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((4, 22), self.frame_size),
                 self.main_img.subsurface((51, 22), self.frame_size),
@@ -59,8 +55,6 @@ class Dog1(BaseObject):
             self.main_img = pygame.image.load(DOGS_ASSETS_DIR / '1' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (41, 26)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
-
             self.images = (
                 self.main_img.subsurface((2, 22), self.frame_size),
                 self.main_img.subsurface((53, 22), self.frame_size),
@@ -73,8 +67,6 @@ class Dog1(BaseObject):
             self.main_img = pygame.image.load(DOGS_ASSETS_DIR / '1' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (42, 26)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
-
             self.images = (
                 self.main_img.subsurface((149, 22), self.frame_size),
             )
@@ -96,7 +88,6 @@ class Dog2(BaseObject):
             self.main_img = pygame.image.load(DOGS_ASSETS_DIR / '2' / 'idle.png')
             self.animation_delay = 750
             self.frame_size = (32, 32)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((3, 16), self.frame_size),
                 self.main_img.subsurface((51, 16), self.frame_size),
@@ -109,7 +100,6 @@ class Dog2(BaseObject):
             self.main_img = pygame.image.load(DOGS_ASSETS_DIR / '2' / 'walk.png')
             self.animation_delay = 500
             self.frame_size = (45, 30)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((0, 18), self.frame_size),
                 self.main_img.subsurface((49, 18), self.frame_size),
@@ -124,7 +114,6 @@ class Dog2(BaseObject):
             self.main_img = pygame.image.load(DOGS_ASSETS_DIR / '2' / 'attack.png')
             self.animation_delay = 500
             self.frame_size = (42, 32)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((3, 16), self.frame_size),
                 self.main_img.subsurface((52, 16), self.frame_size),
@@ -137,8 +126,6 @@ class Dog2(BaseObject):
             self.main_img = pygame.image.load(DOGS_ASSETS_DIR / '2' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (44, 32)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
-
             self.images = (
                 self.main_img.subsurface((3, 16), self.frame_size),
                 self.main_img.subsurface((52, 16), self.frame_size),
@@ -151,7 +138,6 @@ class Dog2(BaseObject):
             self.main_img = pygame.image.load(DOGS_ASSETS_DIR / '2' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (44, 32)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((148, 16), self.frame_size),
             )
@@ -173,7 +159,6 @@ class Cat1(BaseObject):
             self.main_img = pygame.image.load(CATS_ASSETS_DIR / '1' / 'idle.png')
             self.animation_delay = 750
             self.frame_size = (31, 24)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((4, 24), self.frame_size),
                 self.main_img.subsurface((53, 24), self.frame_size),
@@ -186,7 +171,6 @@ class Cat1(BaseObject):
             self.main_img = pygame.image.load(CATS_ASSETS_DIR / '1' / 'walk.png')
             self.animation_delay = 500
             self.frame_size = (40, 30)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((2, 18), self.frame_size),
                 self.main_img.subsurface((50, 18), self.frame_size),
@@ -201,7 +185,6 @@ class Cat1(BaseObject):
             self.main_img = pygame.image.load(CATS_ASSETS_DIR / '1' / 'attack.png')
             self.animation_delay = 500
             self.frame_size = (33, 25)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((3, 23), self.frame_size),
                 self.main_img.subsurface((52, 23), self.frame_size),
@@ -214,7 +197,6 @@ class Cat1(BaseObject):
             self.main_img = pygame.image.load(CATS_ASSETS_DIR / '1' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (35, 24)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((3, 24), self.frame_size),
                 self.main_img.subsurface((55, 24), self.frame_size),
@@ -227,7 +209,6 @@ class Cat1(BaseObject):
             self.main_img = pygame.image.load(CATS_ASSETS_DIR / '1' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (35, 24)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((153, 24), self.frame_size),
             )
@@ -249,7 +230,6 @@ class Cat2(BaseObject):
             self.main_img = pygame.image.load(CATS_ASSETS_DIR / '2' / 'idle.png')
             self.animation_delay = 750
             self.frame_size = (27, 21)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((5, 27), self.frame_size),
                 self.main_img.subsurface((53, 27), self.frame_size),
@@ -262,7 +242,6 @@ class Cat2(BaseObject):
             self.main_img = pygame.image.load(CATS_ASSETS_DIR / '2' / 'walk.png')
             self.animation_delay = 500
             self.frame_size = (33, 21)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((4, 27), self.frame_size),
                 self.main_img.subsurface((50, 27), self.frame_size),
@@ -277,7 +256,6 @@ class Cat2(BaseObject):
             self.main_img = pygame.image.load(CATS_ASSETS_DIR / '2' / 'attack.png')
             self.animation_delay = 500
             self.frame_size = (31, 23)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((5, 25), self.frame_size),
                 self.main_img.subsurface((53, 25), self.frame_size),
@@ -290,8 +268,6 @@ class Cat2(BaseObject):
             self.main_img = pygame.image.load(CATS_ASSETS_DIR / '2' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (33, 20)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
-
             self.images = (
                 self.main_img.subsurface((5, 28), self.frame_size),
                 self.main_img.subsurface((56, 28), self.frame_size),
@@ -304,7 +280,6 @@ class Cat2(BaseObject):
             self.main_img = pygame.image.load(CATS_ASSETS_DIR / '2' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (33, 20)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((153, 28), self.frame_size),
             )
@@ -326,7 +301,6 @@ class Rat1(BaseObject):
             self.main_img = pygame.image.load(RATS_ASSETS_DIR / '1' / 'idle.png')
             self.animation_delay = 750
             self.frame_size = (20, 8)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((3, 24), self.frame_size),
                 self.main_img.subsurface((35, 24), self.frame_size),
@@ -339,7 +313,6 @@ class Rat1(BaseObject):
             self.main_img = pygame.image.load(RATS_ASSETS_DIR / '1' / 'walk.png')
             self.animation_delay = 500
             self.frame_size = (20, 8)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((3, 24), self.frame_size),
                 self.main_img.subsurface((35, 24), self.frame_size),
@@ -352,8 +325,6 @@ class Rat1(BaseObject):
             self.main_img = pygame.image.load(RATS_ASSETS_DIR / '1' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (20, 7)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
-
             self.images = (
                 self.main_img.subsurface((3, 25), self.frame_size),
                 self.main_img.subsurface((35, 25), self.frame_size),
@@ -364,7 +335,6 @@ class Rat1(BaseObject):
             self.main_img = pygame.image.load(RATS_ASSETS_DIR / '1' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (20, 7)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((35, 25), self.frame_size),
             )
@@ -385,7 +355,6 @@ class Rat2(BaseObject):
             self.main_img = pygame.image.load(RATS_ASSETS_DIR / '2' / 'idle.png')
             self.animation_delay = 750
             self.frame_size = (27, 10)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((0, 22), self.frame_size),
                 self.main_img.subsurface((32, 22), self.frame_size),
@@ -398,7 +367,6 @@ class Rat2(BaseObject):
             self.main_img = pygame.image.load(RATS_ASSETS_DIR / '2' / 'walk.png')
             self.animation_delay = 500
             self.frame_size = (27, 12)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((0, 20), self.frame_size),
                 self.main_img.subsurface((32, 20), self.frame_size),
@@ -411,8 +379,6 @@ class Rat2(BaseObject):
             self.main_img = pygame.image.load(RATS_ASSETS_DIR / '2' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (27, 10)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
-
             self.images = (
                 self.main_img.subsurface((0, 22), self.frame_size),
                 self.main_img.subsurface((32, 22), self.frame_size),
@@ -425,7 +391,6 @@ class Rat2(BaseObject):
             self.main_img = pygame.image.load(RATS_ASSETS_DIR / '2' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (27, 10)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((96, 22), self.frame_size),
             )
@@ -446,7 +411,6 @@ class Bird1(BaseObject):
             self.main_img = pygame.image.load(BIRDS_ASSETS_DIR / '1' / 'idle.png')
             self.animation_delay = 750
             self.frame_size = (21, 20)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((2, 12), self.frame_size),
                 self.main_img.subsurface((34, 12), self.frame_size),
@@ -459,7 +423,6 @@ class Bird1(BaseObject):
             self.main_img = pygame.image.load(BIRDS_ASSETS_DIR / '1' / 'walk.png')
             self.animation_delay = 500
             self.frame_size = (28, 23)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((1, 9),  self.frame_size),
                 self.main_img.subsurface((33, 9), self.frame_size),
@@ -474,8 +437,6 @@ class Bird1(BaseObject):
             self.main_img = pygame.image.load(BIRDS_ASSETS_DIR / '1' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (27, 18)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
-
             self.images = (
                 self.main_img.subsurface((2, 14), self.frame_size),
                 self.main_img.subsurface((34, 14), self.frame_size),
@@ -488,7 +449,6 @@ class Bird1(BaseObject):
             self.main_img = pygame.image.load(BIRDS_ASSETS_DIR / '1' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (27, 18)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((98, 14), self.frame_size),
             )
@@ -509,7 +469,6 @@ class Bird2(BaseObject):
             self.main_img = pygame.image.load(BIRDS_ASSETS_DIR / '2' / 'idle.png')
             self.animation_delay = 750
             self.frame_size = (16, 14)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((3, 18), self.frame_size),
                 self.main_img.subsurface((35, 18), self.frame_size),
@@ -522,7 +481,6 @@ class Bird2(BaseObject):
             self.main_img = pygame.image.load(BIRDS_ASSETS_DIR / '2' / 'walk.png')
             self.animation_delay = 500
             self.frame_size = (21, 14)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((3, 18),  self.frame_size),
                 self.main_img.subsurface((35, 18), self.frame_size),
@@ -537,8 +495,6 @@ class Bird2(BaseObject):
             self.main_img = pygame.image.load(BIRDS_ASSETS_DIR / '2' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (20, 14)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
-
             self.images = (
                 self.main_img.subsurface((3, 18), self.frame_size),
                 self.main_img.subsurface((35, 18), self.frame_size),
@@ -551,7 +507,6 @@ class Bird2(BaseObject):
             self.main_img = pygame.image.load(BIRDS_ASSETS_DIR / '2' / 'death.png')
             self.animation_delay = 500
             self.frame_size = (20, 14)
-            self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
             self.images = (
                 self.main_img.subsurface((99, 18), self.frame_size),
             )

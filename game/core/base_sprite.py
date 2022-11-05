@@ -36,6 +36,7 @@ class BaseSprite(pygame.sprite.Sprite):
         raise NotImplementedError
 
     def _prepare_images(self) -> None:
+        self.rect = pygame.Rect(0, 0, *self.frame_size[::-1])
         self.images = tuple(
             pygame.transform.scale(image, (self.frame_size[0] * self.size, self.frame_size[1] * self.size))
             for image in self.images
