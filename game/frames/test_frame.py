@@ -4,7 +4,7 @@ from more_itertools import chunked
 from pygame.event import Event
 from pygame.surface import Surface
 
-from game.game_objects.animals import Cat1, Cat2, Dog1, Dog2, Rat1
+from game.game_objects import animals
 
 if TYPE_CHECKING:
     from game.game import Game
@@ -14,15 +14,18 @@ class TestFrame:
     def __init__(self, game: 'Game') -> None:
         self.game = game
         self.objects = [
-            Dog1(), Dog1(), Dog1(), Dog1(), Dog1(),
-            Dog2(), Dog2(), Dog2(), Dog2(), Dog2(),
-            Cat1(), Cat1(), Cat1(), Cat1(), Cat1(),
-            Cat2(), Cat2(), Cat2(), Cat2(), Cat2(),
-            Rat1(), Rat1(), Rat1(), Rat1(), Rat1(),
+            animals.Dog1(), animals.Dog1(), animals.Dog1(), animals.Dog1(), animals.Dog1(),
+            animals.Dog2(), animals.Dog2(), animals.Dog2(), animals.Dog2(), animals.Dog2(),
+            animals.Cat1(), animals.Cat1(), animals.Cat1(), animals.Cat1(), animals.Cat1(),
+            animals.Cat2(), animals.Cat2(), animals.Cat2(), animals.Cat2(), animals.Cat2(),
+            animals.Rat1(), animals.Rat1(), animals.Rat1(), animals.Rat1(), animals.Rat1(),
+            animals.Rat2(), animals.Rat2(), animals.Rat2(), animals.Rat2(), animals.Rat2(),
+            animals.Bird1(), animals.Bird1(), animals.Bird1(), animals.Bird1(), animals.Bird1(),
+            animals.Bird2(), animals.Bird2(), animals.Bird2(), animals.Bird2(), animals.Bird2(),
         ]
 
         start_x = 50
-        buf_y = 50
+        buf_y = 0
         for objects in chunked(self.objects, 5):
             buf_x = start_x
             buf_y += 50

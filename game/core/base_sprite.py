@@ -1,6 +1,6 @@
 from abc import abstractmethod
 from itertools import cycle
-from typing import Any, TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 import pygame
 from pygame.event import Event
@@ -13,7 +13,7 @@ class BaseSprite(pygame.sprite.Sprite):
     buffer_delta_time: float
     animation_pause_delay: float
     animation_delay: int
-    images: tuple[pygame.sruface.Surface, ...]
+    images: tuple[pygame.surface.Surface, ...]
     index: cycle
     rect: pygame.Rect
     main_img: pygame.surface.Surface
@@ -37,10 +37,7 @@ class BaseSprite(pygame.sprite.Sprite):
 
     def _prepare_images(self) -> None:
         self.images = tuple(
-            pygame.transform.scale(
-                image,
-                (self.frame_size[0] * self.size, self.frame_size[1] * self.size),
-            )
+            pygame.transform.scale(image, (self.frame_size[0] * self.size, self.frame_size[1] * self.size))
             for image in self.images
         )
 
