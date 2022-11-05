@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "adogslife"
+version = "0.1.0"
+description = ""
+authors = ["Krynce <krynce.gs@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10"
+pygame = "^2.1.2"
+more-itertools = "^9.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.10.1"
+flakeheaven = "^3.2.1"
+flake8-commas = "^2.1.0"
+flake8-quotes = "^3.3.1"
+pyupgrade = "^3.2.0"
+flake8-absolute-import = "^1.0.0.1"
+flake8-broken-line = "^0.6.0"
+flake8-comprehensions = "^3.10.1"
+flake8-isort = "^5.0.0"
+flake8-todo = "^0.7"
+mypy = "^0.982"
+autoflake = "^1.7.7"
+
+[tool.flakeheaven]
+format = "colored"
+max_line_length = 120
+show_source = true
+
+[tool.flakeheaven.plugins]
+pyflakes = ["+*", "-F401"]
+"flake8-*" = ["+*"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
