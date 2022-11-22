@@ -30,3 +30,8 @@ PoC: GreyFox#5365; Krynce#3604
 Narrative: A dog's life, not an easy life. You will have to observe the life of the dog, experience with her the events of her life
 3с (Character, Camera, Control):  a dog, side view (parallax scrolling), No control
 core loop: event->decision->result
+player task: accompany the dog in her life
+location: city street, real time
+mechanics: __soon__
+objects
+enemies
